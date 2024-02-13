@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/goal"
+        android:icon="@drawable/nav_goal"
+        android:title="目標區" />
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/nav_home"
+        android:title="主頁" />
+    <item
+        android:id="@+id/friend"
+        android:icon="@drawable/nav_friend"
+        android:title="好友排名" />
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/nav_profile"
+        android:title="個人頁面" />
+
+</menu>

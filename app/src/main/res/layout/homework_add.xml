@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/blue_border_rounded_cornwe"
+        app:layout_constraintEnd_toEndOf="@+id/name"
+        app:layout_constraintStart_toEndOf="@+id/name">
+
+        <TextView
+            android:id="@+id/grade"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="100dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="作業"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/name"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="36dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="154dp"
+            android:layout_marginEnd="92dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:hint="時限"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/complete"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/complete"
+            android:layout_width="75dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="264dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/cursor_color"
+            android:text="完成"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

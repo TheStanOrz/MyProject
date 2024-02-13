@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/Bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"
+        android:padding="20dp" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="283dp"
+        android:layout_height="304dp"
+        android:layout_above="@+id/navigation"
+        android:layout_below="@+id/Bar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="151dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="199dp"
+        android:indeterminateOnly="false"
+        android:progressDrawable="@drawable/hw_circle"
+        tools:progress="00" />
+
+    <TextView
+        android:id="@+id/goal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/navigation"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="31dp"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="1.7dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="62dp"
+        android:layout_marginBottom="77dp"
+        android:background="@color/Lorange"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:paddingTop="12dp"
+        android:paddingBottom="14dp"
+        android:text="完成進度 : 0/0"
+        android:textColor="@color/orange"
+        android:textSize="15sp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="423dp"
+        android:layout_height="57dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="@color/Lorange"
+        app:itemHorizontalTranslationEnabled="false"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/nav" />
+
+</RelativeLayout>
