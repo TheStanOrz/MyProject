@@ -1,0 +1,1 @@
+大學專題是利用Android Studio串接 Google Firebase， 用到了Authentication帳號管理認證，Storage儲存照片，Cloud Firestore資料庫CRUD， 專題主題是簡單自律，主要功能像是進階版的To Do List， 使用者需要新增一個自訂目標，如使用者有在期限內完成，就可根據與目標完成日的差距天數獲得分數，最後會與好友進行排名競爭。 MainActivity 登入頁,signin 註冊頁,Profile 個人頁 Home 首頁,Friend 好友頁,Goal 目標頁 https://www.youtube.com/watch?v=R5Ef7v4eam0 APP操作影片
